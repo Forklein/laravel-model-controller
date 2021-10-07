@@ -14,7 +14,7 @@ class MovieController extends Controller
     }
     public function movie($id)
     {
-        $movie = Movie::find($id);
+        $movie = Movie::findorfail($id);
         return view('movies.show', compact('movie'));
     }
 }

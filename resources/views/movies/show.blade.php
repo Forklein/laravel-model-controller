@@ -1,5 +1,6 @@
 @extends('layouts.main')
 
+@section('title', $movie->title)
 @section('content')
 
 <section id="movie">

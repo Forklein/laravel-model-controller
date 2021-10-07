@@ -11244,3 +11244,14 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: goldenrod;
+}
+
+header nav {
+  background-color: darkseagreen;
+}
+
+#movies .card {
+  background-color: lightblue;
+}
