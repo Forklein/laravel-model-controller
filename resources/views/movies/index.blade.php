@@ -1,5 +1,20 @@
 @extends('layouts.main')
 
 @section('content')
-    <h1>Test</h1>
+
+<section id="movies">
+    <div class="container">
+        @foreach($movies as $movie)
+        <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">{{ $movie['title'] }}</h5>
+              <h6 class="card-subtitle mb-2 text-muted">{{ $movie['original_title'] }}</h6>
+              <p>{{ $movie['nationality'] }}</p>
+              <p>{{ $movie['date'] }}</p>
+              <p>{{ $movie['vote'] }}</p>
+            </div>
+          </div>
+        @endforeach
+    </div>
+</section>
 @endsection
